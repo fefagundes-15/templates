@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Felipe Francisco | Hub de Templates</title>
+    <meta name="description"
+        content="Hub de templates profissionais para salões, clínicas, restaurantes, cafeterias e pet shops. Navegue como em um aplicativo.">
+    <meta name="author" content="Felipe Francisco">
+    <meta name="robots" content="index,follow">
+    <meta property="og:title" content="Felipe Francisco | Templates Profissionais">
+    <meta property="og:description" content="Coleção de templates de sites para negócios locais.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%2300546b'/%3E%3Ctext x='50' y='70' font-size='50' text-anchor='middle' fill='%23f5f0e6' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
+    <div class="particles" aria-hidden="true"></div>
+
+    <!-- PRELOADER (tela de carregamento rápida) -->
+    <div id="loader-wrapper" role="status" aria-live="polite">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+        <span class="sr-only">Carregando site...</span>
+    </div>
+
+    <!-- Menu de navegação estilo aplicação: links diretos para os templates -->
+    <nav class="app-nav" aria-label="Navegação entre templates">
+        <div class="nav-container">
+            <p class="nav-explore-label">Explore também outros projetos:</p>
+
+            <div class="nav-buttons">
+                <a href="#" class="nav-item nav-hub-btn" id="navHubBtn" aria-label="Voltar ao hub (todos os templates)">
+                    <i class="fas fa-th-large" aria-hidden="true"></i>
+                    <span>Início</span>
+                </a>
+                <a href="template1/index.html" class="nav-item" data-template="salao"
+                    aria-label="Abrir template Salão de Beleza">
+                    <i class="fas fa-cut" aria-hidden="true"></i>
+                    <span>Salão</span>
+                </a>
+                <a href="template2/index.html" class="nav-item" data-template="estetica"
+                    aria-label="Abrir template Estética e Odonto">
+                    <i class="fas fa-spa" aria-hidden="true"></i>
+                    <span>Estética</span>
+                </a>
+                <a href="template3/index.html" class="nav-item" data-template="restaurante"
+                    aria-label="Abrir template Restaurante">
+                    <i class="fas fa-utensils" aria-hidden="true"></i>
+                    <span>Restaurante</span>
+                </a>
+                <a href="template4/index.html" class="nav-item" data-template="cafeteria"
+                    aria-label="Abrir template Cafeteria">
+                    <i class="fas fa-mug-hot" aria-hidden="true"></i>
+                    <span>Cafeteria</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" role="banner">
+        <div class="container">
+            <p class="hero-badge" aria-label="Destaques do ano">✦ Felipe Francisco ✦</p> <br>
+            <p class="hero-badge" aria-label="Destaques do ano">✦ <span class="year"></span> ✦</p>
+            <h1 class="hero-title">Explore os <span class="gradient">modelos de site</span></h1>
+            <div class="hero-line" aria-hidden="true"></div>
+            <p class="hero-subtitle">Templates pensados para negócios que precisam de uma presença digital profissional
+                e objetiva.</p>
+        </div>
+    </header>
+
+    <main id="main" class="main" role="main">
+        <div class="container">
+            <section class="projects" id="projects" aria-labelledby="projects-title">
+                <div class="projects-grid" role="list">
+                    <!-- Salão de Beleza -->
+                    <article class="project-item" role="listitem" data-preview-img="images/cabeleireiro.jpg"
+                        data-hover-color="#3b82f6" data-link="template1/index.html">
+                        <div class="project-thumb">
+                            <picture>
+                                <source media="(max-width: 47.9375rem)" srcset="images/cabeleireiro-mobile.jpg">
+                                <img src="images/cabeleireiro.jpg" alt="Preview do template para salão de beleza"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="project-main">
+                            <header class="project-info">
+                                <h3 class="project-title" data-text="Salão de Beleza">Salão de Beleza</h3>
+                            </header>
+                            <p class="project-description">Mostre seus serviços, sua equipe e seus trabalhos. O cliente
+                                vê, se interessa e já pode entrar em contato pelo WhatsApp ou preencher um formulário.
+                                Você ganha mais clientes sem depender só do Instagram.</p>
+                            <div class="project-actions">
+                                <a href="template1/index.html" class="project-link" target="_self"
+                                    rel="noopener noreferrer"
+                                    aria-label="Abrir demonstração do template Salão de Beleza">Ver demonstração →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Estética & Odonto -->
+                    <article class="project-item" role="listitem" data-preview-img="images/odonto.jpg"
+                        data-hover-color="#10b981" data-link="template2/index.html">
+                        <div class="project-thumb">
+                            <picture>
+                                <source media="(max-width: 47.9375rem)" srcset="images/odonto-mobile.jpg">
+                                <img src="images/odonto.jpg" alt="Preview do template para estética e odontologia"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="project-main">
+                            <header class="project-info">
+                                <h3 class="project-title" data-text="Estética &amp; Odonto">Estética &amp; Odonto</h3>
+                            </header>
+                            <p class="project-description">Destaque seus procedimentos e serviços, agende consultas e
+                                mantenha contato direto com quem busca seus serviços. Botão do WhatsApp fixo e
+                                formulário para captar nome e telefone de potenciais pacientes.</p>
+                            <div class="project-actions">
+                                <a href="template2/index.html" class="project-link" target="_self"
+                                    rel="noopener noreferrer"
+                                    aria-label="Abrir demonstração do template Estética e Odonto">Ver demonstração →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Restaurante -->
+                    <article class="project-item" role="listitem" data-preview-img="images/restaurante.jpg"
+                        data-hover-color="#f59e0b" data-link="template3/index.html">
+                        <div class="project-thumb">
+                            <picture>
+                                <source media="(max-width: 47.9375rem)" srcset="images/restaurante-mobile.jpg">
+                                <img src="images/restaurante.jpg" alt="Preview do template para restaurante"
+                                    loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="project-main">
+                            <header class="project-info">
+                                <h3 class="project-title" data-text="Restaurante">Restaurante</h3>
+                            </header>
+                            <p class="project-description">Mostre seu cardápio, aceite reservas online e facilite
+                                pedidos pelo WhatsApp. O cliente encontra tudo em um lugar só e você vende mais sem
+                                precisar de aplicativo caro.</p>
+                            <div class="project-actions">
+                                <a href="template3/index.html" class="project-link" target="_self"
+                                    rel="noopener noreferrer"
+                                    aria-label="Abrir demonstração do template Restaurante">Ver demonstração →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Cafeteria -->
+                    <article class="project-item" role="listitem" data-preview-img="images/cafe.jpg"
+                        data-hover-color="#ec4899" data-link="template4/index.html">
+                        <div class="project-thumb">
+                            <picture>
+                                <source media="(max-width: 47.9375rem)" srcset="images/cafe-mobile.jpg">
+                                <img src="images/cafe.jpg" alt="Preview do template para cafeteria" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="project-main">
+                            <header class="project-info">
+                                <h3 class="project-title" data-text="Cafeteria">Cafeteria</h3>
+                            </header>
+                            <p class="project-description">Crie um ambiente virtual aconchegante, destaque seus produtos
+                                especiais e incentive o contato pelo WhatsApp para encomendas ou delivery. Simples e
+                                eficaz.</p>
+                            <div class="project-actions">
+                                <a href="template4/index.html" class="project-link" target="_self"
+                                    rel="noopener noreferrer" aria-label="Abrir demonstração do template Cafeteria">Ver
+                                    demonstração →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- BOTÃO VEJA MAIS / PORTFÓLIO COMPLETO -->
+            <div class="see-more-container">
+                <a href="https://felipefrancisco.netlify.app/br" class="see-more-btn" target="_blank"
+                    rel="noopener noreferrer">
+                    <span>Explore todos os projetos</span>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+                <p class="see-more-hint">Visite meu portfólio completo</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <p class="footer-logo">✦ Felipe Francisco ✦</p>
+                    <p>© <span class="year"></span> Todos os direitos reservados.</p>
+                </div>
+                <nav class="footer-social" aria-label="Links de redes sociais">
+                    <a href="https://github.com/fefagundes-15" target="_self" rel="noopener noreferrer"
+                        aria-label="GitHub de Felipe Francisco"><i class="fab fa-github"
+                            aria-hidden="true"></i><span>GitHub</span></a>
+                    <a href="https://linkedin.com/in/felipefrancisco1" target="_self" rel="noopener noreferrer"
+                        aria-label="LinkedIn de Felipe Francisco"><i class="fab fa-linkedin-in"
+                            aria-hidden="true"></i><span>LinkedIn</span></a>
+                    <a href="mailto:felipebezerraf@hotmail.com" aria-label="Enviar e-mail para Felipe Francisco"><i
+                            class="fas fa-envelope" aria-hidden="true"></i><span>E-mail</span></a>
+                </nav>
+                <p class="footer-credit">Desenvolvido com <i class="fa-solid fa-heart heartbeat" aria-hidden="true"></i>
+                    por <a href="https://felipefrancisco.netlify.app/" target="_self" rel="noopener noreferrer">Felipe
+                        Francisco</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-preview" aria-hidden="true">
+        <img src="" alt="">
+        <div class="preview-overlay"></div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
